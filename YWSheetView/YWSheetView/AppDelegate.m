@@ -17,14 +17,9 @@
 
 
 
-#warning - pch
-#warning - 引入sheetView
-#warning - 测试、上传到github、写简书
-
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
     
     
     ViewController *vc= [[ViewController alloc] init];

@@ -1,0 +1,55 @@
+//
+//  PrefixHeader.pch
+//  YWPhotoView
+//
+//  Created by yellow on 2019/8/1.
+//  Copyright © 2019 YW. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#endif /* PrefixHeader_pch */
+
+
+//把可能需要用到的字符串写在了pch文件里方便引用
+#define reportMoment_str @"举报这条动态"
+#define deleteMoment_str @"删除这条动态"
+#define seeHomePage_str @"查看TA主页"
+#define chat_str @"聊天"
+#define concern_str @"关注"
+#define cancelConcern_str @"取消关注"
+#define sayHi_str @"打招呼"
+#define removeBlackList_str @"移除黑名单"
+#define openPhoto_str @"从相册获取照片"
+#define openVedio_str @"从相册获取视频"
+#define getCarama_str @"拍摄"
+
+
+
+#define Wi [UIScreen mainScreen].bounds.size.width
+#define He [UIScreen mainScreen].bounds.size.height
+
+
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#define mainColor [UIColor colorWithRed:223/255.0 green:0/255.0 blue:17/255.0 alpha:1]
+
+// 颜色
+#define YWColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define YWColorRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+// 随机色
+#define YWRandomColor YWColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+#define Angle2Radian(angle) ((angle) / 180.0 * M_PI)
+
+#ifdef DEBUG
+# define YWLog(fmt, ...) NSLog((@"[文件名:%s]\n" "[函数名:%s]\n" "[行号:%d] \n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+# define YWLog(...);
+#endif
+
+
