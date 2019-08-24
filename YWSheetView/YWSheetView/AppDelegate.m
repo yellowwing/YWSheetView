@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +16,27 @@
 @implementation AppDelegate
 
 
+
+#warning - pch
+#warning - 引入sheetView
+#warning - 测试、上传到github、写简书
+
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
+    
+    ViewController *vc= [[ViewController alloc] init];
+    vc.view.backgroundColor = [UIColor whiteColor];
+
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    self.window.rootViewController=vc;
+
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 

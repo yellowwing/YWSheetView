@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FDBFFA9A2310E60600691797 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBFFA992310E60600691797 /* AppDelegate.m */; };
 		FDBFFA9D2310E60600691797 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBFFA9C2310E60600691797 /* ViewController.m */; };
-		FDBFFAA02310E60600691797 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBFFA9E2310E60600691797 /* Main.storyboard */; };
 		FDBFFAA22310E60700691797 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDBFFAA12310E60700691797 /* Assets.xcassets */; };
 		FDBFFAA52310E60700691797 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBFFAA32310E60700691797 /* LaunchScreen.storyboard */; };
 		FDBFFAA82310E60700691797 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBFFAA72310E60700691797 /* main.m */; };
@@ -40,7 +39,6 @@
 		FDBFFA992310E60600691797 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FDBFFA9B2310E60600691797 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FDBFFA9C2310E60600691797 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FDBFFA9F2310E60600691797 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDBFFAA12310E60700691797 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDBFFAA42310E60700691797 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDBFFAA62310E60700691797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 				FDBFFA992310E60600691797 /* AppDelegate.m */,
 				FDBFFA9B2310E60600691797 /* ViewController.h */,
 				FDBFFA9C2310E60600691797 /* ViewController.m */,
-				FDBFFA9E2310E60600691797 /* Main.storyboard */,
 				FDBFFAA12310E60700691797 /* Assets.xcassets */,
 				FDBFFAA32310E60700691797 /* LaunchScreen.storyboard */,
 				FDBFFAA62310E60700691797 /* Info.plist */,
@@ -237,7 +234,6 @@
 			files = (
 				FDBFFAA52310E60700691797 /* LaunchScreen.storyboard in Resources */,
 				FDBFFAA22310E60700691797 /* Assets.xcassets in Resources */,
-				FDBFFAA02310E60600691797 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +296,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FDBFFA9E2310E60600691797 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDBFFA9F2310E60600691797 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FDBFFAA32310E60700691797 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -370,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -423,7 +411,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -438,13 +426,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9GS5H72VYE;
 				INFOPLIST_FILE = YWSheetView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = YW.YWSheetView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -455,13 +444,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9GS5H72VYE;
 				INFOPLIST_FILE = YWSheetView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = YW.YWSheetView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
